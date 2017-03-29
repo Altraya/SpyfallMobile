@@ -13,5 +13,4 @@
     tools:context="project.spyfallmobile.CreateServerActivity"
     tools:showIn="@layout/activity_create_server">
 
-    
 </RelativeLayout>

@@ -13,4 +13,16 @@
     tools:context="project.spyfallmobile.JoinServerActivity"
     tools:showIn="@layout/activity_join_server">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTop"
+        android:text="@string/info_join_server"/>
+    <ListView
+        android:id="@+id/listViewGames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewTop"
+        >
+    </ListView>
 </RelativeLayout>

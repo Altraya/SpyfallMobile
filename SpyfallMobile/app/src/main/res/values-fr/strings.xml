@@ -3,4 +3,5 @@
     <string name="join_server">Rejoindre un serveur</string>
     <string name="create_server">Créer un serveur</string>
     <string name="welcome_spyfall">Bienvenue sur le spyfall mobile</string>
+    <string name="info_join_server">Touchez l\'une des parties pour la rejoindre</string>
 </resources>
