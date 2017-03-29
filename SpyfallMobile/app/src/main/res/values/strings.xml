@@ -80,4 +80,11 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_join_server">Join server</string>
     <string name="info_join_server">Touch one of the game to join it</string>
+    <string name="game_name">Game name</string>
+    <string name="players_number">Players number</string>
+    <string name="privateStr">Private</string>
+    <string name="publicStr">Public</string>
+    <string name="publicGame">Public game</string>
+    <string name="privateGame">Private game</string>
+    <string name="makeMyGamePrivate">make my game private (public by default)</string>
 </resources>

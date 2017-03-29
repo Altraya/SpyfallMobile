@@ -4,4 +4,11 @@
     <string name="create_server">Créer un serveur</string>
     <string name="welcome_spyfall">Bienvenue sur le spyfall mobile</string>
     <string name="info_join_server">Touchez l\'une des parties pour la rejoindre</string>
+    <string name="game_name">Nom de la partie</string>
+    <string name="players_number">Nombre de joueur</string>
+    <string name="privateStr">Privée</string>
+    <string name="publicStr">Publique</string>
+    <string name="publicGame">Partie publique</string>
+    <string name="privateGame">Partie privée</string>
+    <string name="makeMyGamePrivate">Faire de ma partie une partie privée (publique par défaut)</string>
 </resources>

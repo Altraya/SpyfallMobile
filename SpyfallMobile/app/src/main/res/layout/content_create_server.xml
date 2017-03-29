@@ -13,4 +13,52 @@
     tools:context="project.spyfallmobile.CreateServerActivity"
     tools:showIn="@layout/activity_create_server">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="sans-serif-smallcaps"
+           android:layout_marginBottom="30dp"
+           android:hint="@string/game_name"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/players_number"
+                android:layout_marginRight="18dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_gravity="center_vertical"
+                />
+            <NumberPicker
+                android:id="@+id/numberPickerPlayerNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+            </NumberPicker>
+        </GridLayout>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:text="@string/makeMyGamePrivate"/>
+
+
+
+    </LinearLayout>
 </RelativeLayout>
