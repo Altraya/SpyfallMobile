@@ -1,7 +1,9 @@
 package project.spyfallmobile;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
@@ -26,10 +28,18 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         if(v == _buttonCreateServer)
         {
             //launch create server view
+            Intent myIntent = new Intent(MenuActivity.this, CreateServerActivity.class);
+            myIntent.putExtra("key", "test"); //Optional parameters
+            MenuActivity.this.startActivity(myIntent);
+
+
         }
         else if(v == _buttonJoinServer)
         {
             //launch join server view
+            Intent myIntent = new Intent(MenuActivity.this, JoinServerActivity.class);
+            myIntent.putExtra("key", "test"); //Optional parameters
+            MenuActivity.this.startActivity(myIntent);
         }
 
     }

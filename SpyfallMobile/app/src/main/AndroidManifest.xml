@@ -15,6 +15,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CreateServerActivity"
+            android:label="@string/title_activity_create_server"
+            android:parentActivityName=".MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="project.spyfallmobile.MenuActivity" />
+        </activity>
+        <activity
+            android:name=".JoinServerActivity"
+            android:label="@string/title_activity_join_server"
+            android:parentActivityName=".MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="project.spyfallmobile.MenuActivity" />
+        </activity>
     </application>
 
 </manifest>
