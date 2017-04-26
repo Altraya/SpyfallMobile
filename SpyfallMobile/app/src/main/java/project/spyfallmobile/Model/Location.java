@@ -1,5 +1,6 @@
 package project.spyfallmobile.Model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -8,9 +9,9 @@ import java.util.List;
 
 public class Location {
     private String name;
-    private List<Role> authorizedRole;
+    private ArrayList<Role> authorizedRole;
 
-    public Location(String locat, List<Role> authorizedRole)
+    public Location(String locat, ArrayList<Role> authorizedRole)
     {
         setName(locat);
         setAuthorizedRole(authorizedRole);
@@ -35,7 +36,7 @@ public class Location {
         return authorizedRole;
     }
 
-    public void setAuthorizedRole(List<Role> authorizedRole) {
+    public void setAuthorizedRole(ArrayList<Role> authorizedRole) {
         this.authorizedRole = authorizedRole;
     }
 }

@@ -6,11 +6,13 @@ package project.spyfallmobile.Model;
 
 public class Game {
 
+    private String name;
     private int maxNbPlayer;
     private boolean publicGame;
 
-    public Game(int maxNbPlayer, boolean publicGame)
+    public Game(String name, int maxNbPlayer, boolean publicGame)
     {
+        setName(name);
         setMaxNbPlayer(maxNbPlayer);
         setPublicGame(publicGame);
     }
@@ -29,5 +31,13 @@ public class Game {
 
     public void setPublicGame(boolean publicGame) {
         this.publicGame = publicGame;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

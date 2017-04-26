@@ -25,6 +25,7 @@
            android:layout_height="wrap_content"
            android:fontFamily="sans-serif-smallcaps"
            android:layout_marginBottom="30dp"
+           android:id="@+id/gameName"
            android:hint="@string/game_name"/>
 
         <GridLayout
@@ -56,9 +57,8 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:fontFamily="sans-serif"
+            android:id="@+id/privateGame"
             android:text="@string/makeMyGamePrivate"/>
-
-
 
     </LinearLayout>
 </RelativeLayout>
