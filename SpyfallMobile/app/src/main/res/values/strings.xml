@@ -4,6 +4,7 @@
     <string name="create_server">Create a server</string>
     <string name="welcome_spyfall">Welcome to mobile spyfall !</string>
     <string name="title_activity_create_server">Create server</string>
+    <string name="game_finish">Time is up !</string>
 
     <!-- Strings related to Settings -->
 

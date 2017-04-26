@@ -11,4 +11,5 @@
     <string name="publicGame">Partie publique</string>
     <string name="privateGame">Partie privée</string>
     <string name="makeMyGamePrivate">Faire de ma partie une partie privée (publique par défaut)</string>
+    <string name="game_finish">Temps imparti terminé !</string>
 </resources>
