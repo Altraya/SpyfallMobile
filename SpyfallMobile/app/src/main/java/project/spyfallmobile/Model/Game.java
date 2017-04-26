@@ -13,13 +13,49 @@ public class Game {
     private boolean publicGame;
     private ArrayList<Player> playerList;
 
+    private ArrayList<String> possibleLocation;
+
 
     public Game(String name, int maxNbPlayer, boolean publicGame)
     {
         setName(name);
         setMaxNbPlayer(maxNbPlayer);
         setPublicGame(publicGame);
+
+        //todo
+        possibleLocation.add("Ecole");
+        possibleLocation.add("Sous-Marin");
+        possibleLocation.add("Bateau de croisière");
     }
+
+    //initialize the game
+    public void launcher()
+    {
+        //random choose a location
+        //Location locat = giveMeRandomLocation();
+
+
+
+
+        //random choose a spy and a role for each player
+        for (Player currentPlayer : playerList) {
+
+        }
+    }
+
+    /*private Location giveMeRandomLocation()
+    {
+        int min = 1;
+        int max = 3;
+
+        int random = min + (int)(Math.random() * ((max - min) + 1));
+
+        String locationName = possibleLocation.get(random);
+        ArrayList<Role> authorizedRoles = new ArrayList<>();
+        //authorizedRoles.
+        return new Location();
+
+    }*/
 
     public int getMaxNbPlayer() {
         return maxNbPlayer;
