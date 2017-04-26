@@ -29,7 +29,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         {
             //launch create server view
             Intent myIntent = new Intent(MenuActivity.this, CreateServerActivity.class);
-            myIntent.putExtra("key", "test"); //Optional parameters
             MenuActivity.this.startActivity(myIntent);
 
 
@@ -37,8 +36,9 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         else if(v == _buttonJoinServer)
         {
             //launch join server view
-            Intent myIntent = new Intent(MenuActivity.this, JoinServerActivity.class);
-            myIntent.putExtra("key", "test"); //Optional parameters
+            /*Intent myIntent = new Intent(MenuActivity.this, JoinServerActivity.class);
+            MenuActivity.this.startActivity(myIntent);*/
+            Intent myIntent = new Intent(MenuActivity.this, GameActivity.class);
             MenuActivity.this.startActivity(myIntent);
         }
 
