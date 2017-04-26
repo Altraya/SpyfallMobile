@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.bluetoothchat;
+package com.example.bob.testbluetooth;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -25,7 +25,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
-import com.example.android.common.logger.Log;
+import com.example.bob.testbluetooth.common.logger.*;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -38,7 +38,7 @@ import java.util.UUID;
  * incoming connections, a thread for connecting with a device, and a
  * thread for performing data transmissions when connected.
  */
-public class BluetoothChatService {
+public class MyBluetoothService {
     // Debugging
     private static final String TAG = "BluetoothChatService";
 
@@ -74,7 +74,7 @@ public class BluetoothChatService {
      * @param context The UI Activity Context
      * @param handler A Handler to send messages back to the UI Activity
      */
-    public BluetoothChatService(Context context, Handler handler) {
+    public MyBluetoothService(Context context, Handler handler) {
         mAdapter = BluetoothAdapter.getDefaultAdapter();
         mState = STATE_NONE;
         mNewState = mState;
@@ -90,7 +90,7 @@ public class BluetoothChatService {
         mNewState = mState;
 
         // Give the new state to the Handler so the UI Activity can update
-        mHandler.obtainMessage(Constants.MESSAGE_STATE_CHANGE, mNewState, -1).sendToTarget();
+        //mHandler.obtainMessage(Constants.MESSAGE_STATE_CHANGE, mNewState, -1).sendToTarget();
     }
 
     /**
@@ -201,7 +201,7 @@ public class BluetoothChatService {
         // Send the name of the connected device back to the UI Activity
         Message msg = mHandler.obtainMessage(Constants.MESSAGE_DEVICE_NAME);
         Bundle bundle = new Bundle();
-        bundle.putString(Constants.DEVICE_NAME, device.getName());
+        //bundle.putString(Constants.DEVICE_NAME, device.getName());
         msg.setData(bundle);
         mHandler.sendMessage(msg);
         // Update UI title
@@ -272,7 +272,7 @@ public class BluetoothChatService {
         updateUserInterfaceTitle();
 
         // Start the service over to restart listening mode
-        BluetoothChatService.this.start();
+        MyBluetoothService.this.start();
     }
 
     /**
@@ -291,7 +291,7 @@ public class BluetoothChatService {
         updateUserInterfaceTitle();
 
         // Start the service over to restart listening mode
-        BluetoothChatService.this.start();
+        MyBluetoothService.this.start();
     }
 
     /**
@@ -344,7 +344,7 @@ public class BluetoothChatService {
 
                 // If a connection was accepted
                 if (socket != null) {
-                    synchronized (BluetoothChatService.this) {
+                    synchronized (MyBluetoothService.this) {
                         switch (mState) {
                             case STATE_LISTEN:
                             case STATE_CONNECTING:
@@ -437,7 +437,7 @@ public class BluetoothChatService {
             }
 
             // Reset the ConnectThread because we're done
-            synchronized (BluetoothChatService.this) {
+            synchronized (MyBluetoothService.this) {
                 mConnectThread = null;
             }
 
