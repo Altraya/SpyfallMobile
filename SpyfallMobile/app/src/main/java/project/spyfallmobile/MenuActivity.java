@@ -36,10 +36,9 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         else if(v == _buttonJoinServer)
         {
             //launch join server view
-            /*Intent myIntent = new Intent(MenuActivity.this, JoinServerActivity.class);
-            MenuActivity.this.startActivity(myIntent);*/
-            Intent myIntent = new Intent(MenuActivity.this, GameActivity.class);
+            Intent myIntent = new Intent(MenuActivity.this, JoinServerActivity.class);
             MenuActivity.this.startActivity(myIntent);
+
         }
 
     }

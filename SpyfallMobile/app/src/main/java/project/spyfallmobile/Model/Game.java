@@ -1,5 +1,7 @@
 package project.spyfallmobile.Model;
 
+import java.util.ArrayList;
+
 /**
  * Created by Karakayn on 26/04/2017.
  */
@@ -9,6 +11,8 @@ public class Game {
     private String name;
     private int maxNbPlayer;
     private boolean publicGame;
+    private ArrayList<Player> playerList;
+
 
     public Game(String name, int maxNbPlayer, boolean publicGame)
     {
@@ -39,5 +43,13 @@ public class Game {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public ArrayList<Player> getPlayerList() {
+        return playerList;
+    }
+
+    public void setPlayerList(ArrayList<Player> playerList) {
+        this.playerList = playerList;
     }
 }
